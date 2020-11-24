@@ -91,26 +91,57 @@
 \hypersetup{linkcolor=magenta}
 \input{preface/abstract.tex}
 \hypersetup{linkcolor=.}
-\input{preface/acknowledgments.tex}
+\input{preface/acknowledgements.tex}
 \afterpreface
 \hypersetup{linkcolor=magenta}
 
 
 
 % -- Sections --
-\part{PART I TITLE}                 % PART I
-\chapter{Chapter1's Title}           % Chapter 1
-\label{Chapter}
+\chapter{Introduction}                          % Chapter 1
+\label{Chapter1:intro}
 % section:
-\input{chapters/chapter1/section1}    % Chapter 1 Section 1
+\input{chapters/chapter1-intro/1-motivation}
+\input{chapters/chapter1-intro/2-outline}
+
+\part{Environmental Risks in Supervised Learning: Foundations}
+
+\chapter{Literature Review}                     % Chapter 2
+\label{Chapter2:review}
+% section:
+\input{chapters/chapter2-review/review}
 
 
-% -- Sections --
-\part{PART II TITLE}                 % PART II
-\chapter{Chapter2's Title}           % Chapter 2
-\label{Chapter}
+\chapter{Methodology}                           % Chapter 3
+\label{Chapter3:method}
 % section:
-\input{chapters/chapter2/section1}    % Chapter 2 Section 1
+\input{chapters/chapter3-method/1-data}
+\input{chapters/chapter3-method/2-feature}
+\input{chapters/chapter3-method/3-model_accuracy}
+\input{chapters/chapter3-method/4-forecasting}
+
+\part{Sea Ice in the Arctic: Predicting in Supervised Learning}
+
+
+\chapter{Results}                               % Chapter 4
+\label{Chapter4:results}
+% section:
+\input{chapters/chapter4-results/1-PCA}
+\input{chapters/chapter4-results/2-Forecasting}
+
+
+\chapter{Discussion}                            % Chapter 5
+\label{Chapter5:discussion}
+% section:
+\input{chapters/chapter5-discussion/discussion}
+
+
+\chapter{Conclusion}                            % Chapter 5
+\label{Chapter6:conclusion}
+% section:
+\input{chapters/chapter6-conclusion/conclusion}
+
+
 
 
 % Bibliography
