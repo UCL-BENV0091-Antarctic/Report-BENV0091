@@ -1,0 +1,13 @@
+\section{Data} %3.2
+For Y-axis, data for Arctic sea ice could be found in National Snow \& Ice Data Centre (NSIDC). For X-axis, data for global CO2 content and Arctic ozone hole area are made available to public via the National Aeronautics and Space Administration (NASA) website. Data for global population were accessed through the Our World in Data website. In addition, data for the different temperatures and rainfall and average daylight of Arctic are provided by National Oceanic and Atmospheric Administration (NOAA) and Weather Atlas website respectively. Furthermore, the data for the global GDP could be found in the world bank website.
+
+All X-axis data are selected from January 1980 to October 2020 and been divided by month. When collecting the data, some data is divided according to the year as a unit, so it is necessary to convert these data into a month as the unit to divide. For example, for the data of population, first subtract the total population in 1980 from the total population in 1979, and then divide the difference into 12 equal parts, and evenly distribute them to each month in 1980, so as to get the 12 months’ data of population in 1980. However, some data sets may lack partial months of data. Thus, first look for data at the same month of other years, and then use the method of means of regression to calculate the missing data.
+
+In order to meet the standard of normalisation, the first data of the set should be 0, which means each data should be subtracted from the value of the first data. Furthermore, all data should be divided by the value of the last data, thus all data would be controlled between 0 and 1, which is convenient for adjusting parameters in subsequent analysis.
+
+
+%\begin{figure}[!t] % t means top
+%    \center
+%    \includegraphics[scale=0.5]{img/google_search.pdf}
+%    \caption{.....}
+%\end{figure}

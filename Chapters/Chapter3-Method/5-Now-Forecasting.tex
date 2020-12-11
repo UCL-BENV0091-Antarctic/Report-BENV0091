@@ -1,0 +1,36 @@
+\section{Now Forecasting Methodology} %3.5
+
+\subsection{Linear Regression}
+Linear regression uses statistical analysis to determine the quantitative relationship between multiple variables. Y as the dependent variable and X as the independent variable. To simplify our notation, we also introduce the convention of letting $x_0 = 1$ (this is the intercept term), so that
+
+\begin{eqnarray}
+    Y = \sum_{i=1}^{n}{\beta_i x_i}.
+\end{eqnarray}
+
+
+This project uses 7 influencing factors to build a linear regression model. After linear regression calculation, the parameters of each feature in the LR model are obtained. The best-fit straight line is calculated by the least square method, that is, to minimize the sum of squares of the vertical error between each data point and the predicted straight line. P-value can be used to express the magnitude of the significant influence of the independent variable on the dependent variable. In theory, any addition of new variables will increase the R-squared metric.
+
+\subsection{Penalised linear regression (Lasso, min)}
+Penalty regression is a highly computationally efficient prediction method that can reduce a large number of features into a manageable set and make good predictions on various large data sets, especially when the features are correlated. Penalty regression is a technique to avoid overfitting. Because of the low deviation of linear regression, as the number of features increases, it is susceptible to high variance or overfitting. Add a penalty term as a constraint, that is, the choice of regression coefficient should minimize the sum of the residual square sum and the penalty term to limit the coefficient value and reduce the variance. In penalty regression, the contribution of a feature to the fit of the model must be large enough to offset its penalty. Therefore, only important features that can explain Y can be left.
+
+
+\begin{eqnarray}
+    \sum_{i=1}^{n}{(Y_i-Y_i)^2} + \lambda  \sum_{K=1}^{k}{b_k}
+\end{eqnarray}
+
+There are two ways to choose the coefficient $\lambda$ of the penalty term: the minimum (min) method and the 1 standard error (1se) method. The minimum method was selected for this project.
+
+\subsection{Penalised linear regression (Lasso, 1se)}
+...
+
+\subsection{Penalised Polynomial Regression (Lasso, min)}
+....
+
+\subsection{Penalised Polynomial Regression (Lasso, 1se)}
+.....
+
+\subsection{Random Forest}
+Random forest is composed of many decision trees, and there is no correlation between different decision trees. Each decision tree judges and classifies the input samples separately. Each decision tree will get its own classification result. The decision tree with the most classification will become the final the result of. Adjust the parameters on the number of trees and the number of features contained in each tree. The number of trees is determined by out-of-bag error (OOB). When OOB becomes stable, the number at this time is the number of trees. The number of trees selected for this project is 200, with 5 features.
+
+\subsection{Neural Networks}
+A neural network is a massively parallel processor composed of simple processing units. Neurons form the basic structure of the network. When the input enters the neuron, the corresponding weight is assigned, and a nonlinear activation function is applied to convert the input signal into an output signal. This project selected 5 hidden layers, the first hidden layer has 5 neurons, and the second hidden layer has 3 neurons.

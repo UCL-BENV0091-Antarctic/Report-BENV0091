@@ -1,0 +1,24 @@
+\section{Model Accuracy} %3.4
+
+In this research, Mean Squared Error function (MSE) is used to test the model accuracy.
+
+The Mean Squared Error function is generally used to detect the deviation between the predicted value of the model and the true value.
+
+The training set: 
+$$\text{Train = } \{({x_{1}},{y_{1}}),({x_{2}},{y_{2}}),\ldots,({x_{n}},{y_{n}}),\ldots,({x_{N}},{y_{N}})\}$$
+
+N is the total amount of the training set, n = 1,2,...,N
+
+The testing set:
+$$\text{Test = } \{({x_{1}},{y_{1}}),({x_{2}},{y_{2}}),\ldots,({x_{m}},{y_{m}}),\ldots,({x_{M}},{y_{M}})\}$$
+
+M is the total amount of the testing set, m = 1,2,...,M
+
+Predicted value (Estimated value):  
+$${\hat y} = \{{\hat {y_{2}}},{\hat {y_{2}}},\ldots,{\hat {y_{m}}},\ldots,{\hat {y_{M}}}\}$$
+
+Then,
+
+$${\displaystyle \operatorname {MSE} ={\frac {1}{M}}\sum _{m=1}^{M}(y_{m}-{\hat {y_{m}}})^{2}}$$
+
+MSE is the expectation of the square of the difference between the real value and the estimated value. If MSE is large, then the prediction effect is bad.
