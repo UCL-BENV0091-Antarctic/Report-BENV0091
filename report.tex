@@ -7,6 +7,7 @@
 \usepackage{times,latexsym,amsfonts,amssymb,amsmath,graphicx,url,bbm,rotating}
 \usepackage{multirow,hhline,stmaryrd,bussproofs,mathtools,siunitx}
 \usepackage{booktabs,xcolor,csquotes,calligra}
+\usepackage{subcaption}
 
 % (custom libraries)  %new
 \usepackage{afterpage} %new
@@ -83,7 +84,7 @@
 
 % Title
 \title{PREDICTING SEA ICE IN THE ARCTIC WITH SUPERVISED LEARNING}
-\author{UCL Candidate Code: KNCM2, }
+\author{UCL Candidate Code: KNCM2, KNHB8, NMHR0, KCSH2}
 %\principaladviser{Petros Aristidou}
 %\firstreader{John Green}
 %\secondreader{John BigBooty}
@@ -123,32 +124,36 @@
 \chapter{Methodology}                           % Chapter 3
 \label{Chapter3:Method}
 % section:
-\input{Chapters/Chapter3-Method/1-Correlation-Matrix}
+\input{Chapters/Chapter3-Method/1-Feature}
 \input{Chapters/Chapter3-Method/2-Data}
-\input{Chapters/Chapter3-Method/3-Feature}
-\input{Chapters/Chapter3-Method/4-Model-Accuracy}
-\input{Chapters/Chapter3-Method/5-Now-Forecasting}
-\input{Chapters/Chapter3-Method/6-Future-Forecasting}
+\input{Chapters/Chapter3-Method/3-Model-Accuracy}
+\input{Chapters/Chapter3-Method/4-Now-Forecasting}
+\input{Chapters/Chapter3-Method/5-Future-Forecasting}
 
 
 \part{Scenario: Predicting Arctic Sea Ice in Supervised Learning}
 
 
-\chapter{Results}                               % Chapter 4
-\label{Chapter4:Results}
+\chapter{Now Forecasting Results}   % Chapter 4
+\label{Chapter4:Now-Results}
 % section:
-\input{Chapters/Chapter4-Results/1-Correlation-Matrix}
-\input{Chapters/Chapter4-Results/2-Now-Forecasting}
-\input{Chapters/Chapter4-Results/3-Future-Forecasting}
+\input{Chapters/Chapter4-Now-Results/1-Correlation-Matrix}
+\input{Chapters/Chapter4-Now-Results/2-Linear-Regression}
+\input{Chapters/Chapter4-Now-Results/3-Penalised-Linear-Regression}
+\input{Chapters/Chapter4-Now-Results/4-Penalised-Polynomial-Regression }
+\input{Chapters/Chapter4-Now-Results/5-Random-Forest}
+\input{Chapters/Chapter4-Now-Results/6-NeuralNetwork}
+\input{Chapters/Chapter4-Now-Results/7-Comparison}
 
 
-\chapter{Discussion}                            % Chapter 5
-\label{Chapter5:Discussion}
+\chapter{Future Forecasting Results}   % Chapter 5
+\label{Chapter5:Future-Results}
 % section:
-\input{Chapters/Chapter5-Discussion/Discussion}
+\input{Chapters/Chapter5-Future-Results/1-Normal-Situation}
+\input{Chapters/Chapter5-Future-Results/2-Special-Situation}
 
 
-\chapter{Conclusion}                            % Chapter 5
+\chapter{Conclusion}                            % Chapter 6
 \label{Chapter6:Conclusion}
 % section:
 \input{Chapters/Chapter6-Conclusion/Conclusion}

@@ -2,10 +2,39 @@
 
 This thesis consists of two parts --- \sys{Part I Environmental Risks in Supervised Learning: Foundations} and \sys{Part II Scenario: Predicting Arctic Sea Ice in Supervised Learning}.
 
-\sys{Part I} focuses on the task of understanding and building Machine Learning processing flow, including processing to tidy data, so that we are able to predict Arctic sea ice in \sys{Part II}.
-
+\sys{Part I} focuses on the task of understanding history development and the mathematical theory behind the Supervised Learning algorithms and building effective Supervised Learning algorithms so that we are able to predict Arctic sea ice in \sys{Part II}.
 \begin{description}
-    \item In Chapter~\ref{Chapter2:Review}, we first give an overview of the history and recent development of the field of environmental risks, especially predicting sea ice in Arctic or ice sheets in Antarctic with Machine Learning. Next we formally define the problem ... and its main categories. We then briefly discuss ....  Finally, we argue ....
-    \item In Chapter~\ref{Chapter3:Method}, we present the ..... We begin with describing .... We then introduce ... and we describe .... 
-   
+    \item In Chapter~\ref{Chapter2:Review}, we give an overview of the history and recent development of the field of environmental risks, especially:
+        \begin{enumerate}[(i)]
+            \item 
+                \textbf{why we choose to predict sea ice;}
+            \item
+                \textbf{how to predict sea ice level using statistical models;}
+            \item
+                \textbf{how to predict sea ice level using Machine Learning models;}
+            \item
+                \textbf{how to predict sea ice level using non-statistical methods or non-machine learning methods.}
+        \end{enumerate}
+    
+    \item In Chapter~\ref{Chapter3:Method}, we mainly discuss five methodologies, which are:
+        \begin{enumerate}[(i)]
+            \item
+                \textbf{feature description} that explains what these selected features are and why we choose these by referencing past researches;
+            \item 
+                \textbf{data} that simply introduces where our data comes from, and how to normalise our data sets to the range of zero to one;
+            \item
+                \textbf{model accuracy} that introduces two methods that can evaluate the accuracy of our Machine Learning models: \sys{Mean Squared Error} and \sys{R-squared};
+            \item
+                \textbf{now forecasting methodology} that includes six different, important and suitable Supervised Learning algorithms that will be used to now-forecast the sea ice level with k-fold methods;
+            \item
+                \textbf{future forecasting methodology} that mainly explains why and how we designed three different scenarios to do future prediction.
+        \end{enumerate}
 \end{description}
+
+
+\sys{Part II} focuses on specific scenarios and we applied the Machine Learning algorithms and methodologies discussed above on these specific scenarios. Detailedly,
+\begin{description}
+    \item In Chapter \ref{Chapter4:Now-Results},  we get our performance results with different Supervised Learning algorithms via K-fold method.
+    \item In Chapter \ref{Chapter5:Future-Results},  based on the performance results above, we predict the Arctic sea ice for the further 10 years with Random Forest.  In particular, 1) how we predict other environmental factors that influence the Arctic sea ice level; 2) how we analyse the impact of different environmental factors; 3) how we analyse the selected special situations with key factors.
+\end{description}
+ We finally conclude and discuss the future work in this area in Chapter \ref{Chapter6:Conclusion}.

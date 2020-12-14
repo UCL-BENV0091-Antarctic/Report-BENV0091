@@ -1,0 +1,17 @@
+\section{Model Accuracy} %3.4
+
+\subsection{Mean Squared Error}
+Mean Squared Error (MSE) is generally used to observe the deviation between the predicted and true value of the model. MSE (Function \ref{eq:MSE}) is used to measure the accuracy between testing results from models. MSE is the expectation of the sum of squared residuals between the true value and predicted value. The smaller the MSE value, the better the performance of the model in the testing process.
+\begin{eqnarray}
+    {\text{MSE} ={\frac {1}{N}}\sum _{n=1}^{N}(y_{n}-{\hat {y_{n}}})^{2}}
+    \label{eq:MSE}
+\end{eqnarray}
+
+
+\subsection{R-squared}
+R-squared ($\text{R}^{2}$) (Function \ref{eq:R-squared}) is the sum of squares of residuals over the total sum of squares, where the value lies between 0 and 1. It is used to compare the performance of the training results from each training data set. The greater the $\text{R}^{2}$, the better the performance of the model in the training process.
+
+\begin{eqnarray}
+    \text{R}^{2} = {1}-{\frac {\text{SS}_{\text{residual}}}{\text{SS}_{\text{total}}}}
+    \label{eq:R-squared}
+\end{eqnarray}

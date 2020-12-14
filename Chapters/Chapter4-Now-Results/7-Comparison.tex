@@ -1,0 +1,25 @@
+\section{Comparison} %4.7
+\label{sec:Comparison}
+Based on the above four models and seven prediction results, all the results of R-squared and MSE are listed and compared in Table \ref{4.2.6-TABLE}. 
+
+\begin{table}[htbp]
+  \centering
+  \footnotesize
+  \begin{tabular}{p{6.7cm} | c | c}
+  \toprule
+  Model & $\text{R}^2$ & MSE\\ %row 1
+  \hline
+  Linear Regression & 0.898 & 0.00946\\
+  Penalized Linear Regression (Lasso, min) & 0.863 & 0.00690\\
+  Penalized Linear Regression (Lasso, 1se) & 0.857 & 0.00734\\
+  Penalized Polynomial Regression (Lasso, min) & 0.931 & 0.00448\\
+  Penalized Polynomial Regression (Lasso, 1se) & 0.917 & 0.00483\\
+  Random Forest & \textbf{0.983} & \textbf{0.00105}\\
+  Neural Networks & 0.927 & 0.00106\\
+  \bottomrule
+  \end{tabular}
+  \caption{Comparison of performance metrics.}
+  \label{4.2.6-TABLE}
+\end{table}
+
+Random Forest was selected for further future predictions as it was the best-performed model. As we can see from Table \ref{4.2.6-TABLE}, the model with low $\text{R}^2$ might not perform well, which indirectly proves the existence of over-fitting phenomenon and the necessity of penalization as well.
